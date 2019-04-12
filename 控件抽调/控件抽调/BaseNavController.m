@@ -4,7 +4,12 @@
 //
 //  Created by wuliangzhi on 2019/3/16.
 //  Copyright © 2019年 wuliangzhi. All rights reserved.
-//
+/*
+ 1.禁止系统自带的侧滑手势,换成了全屏侧滑
+ 2.添加了一个返回按钮
+ 3.导航栏是透明的
+ 4.导航条的背景颜色是灰色
+ */
 
 #import "BaseNavController.h"
 
@@ -19,7 +24,7 @@
     //导航条为透明(默认为透明,根视图的坐标从(0,0)开始)
     self.navigationBar.translucent = YES;
     //导航条的背景颜色
-    self.navigationBar.barTintColor = [UIColor lightGrayColor];
+    self.navigationBar.barTintColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.4];
     //导航条的文字和图片的颜色
 //    self.navigationBar.tintColor = [UIColor yellowColor];
     
@@ -50,7 +55,7 @@
     if (self.childViewControllers.count >= 1) {
         // 左上角的返回按钮
         UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        leftBtn.frame = CGRectMake(0, 0, 25, 25);
+        leftBtn.frame = CGRectMake(0, 0, 16, 30);
         [leftBtn setBackgroundImage:[UIImage imageNamed:@"返回图标"] forState:UIControlStateNormal];
         [leftBtn addTarget:self action:@selector(leftBarBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem * leftBarBtn = [[UIBarButtonItem alloc]initWithCustomView:leftBtn];

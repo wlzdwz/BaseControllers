@@ -50,8 +50,10 @@
     return NO;
 }
 
+//默认是支持竖直方向
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskPortrait;
 }
+
 
 @end

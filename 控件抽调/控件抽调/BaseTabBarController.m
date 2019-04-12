@@ -4,7 +4,12 @@
 //
 //  Created by wuliangzhi on 2019/3/16.
 //  Copyright © 2019年 wuliangzhi. All rights reserved.
-//
+/*
+ 1.tabItem的字体;
+ 2.tabaItem选中时的动态效果
+ 3.屏幕旋转
+ */
+
 
 #import "BaseTabBarController.h"
 #import "BaseNavController.h"
@@ -68,12 +73,11 @@
 - (BaseNavController *)addOneChildViewController:(UIViewController *)viewController image:(UIImage *)image selectedImage:(UIImage *)selectedImage title:(NSString *)title {
     BaseNavController *navC = [[BaseNavController alloc] initWithRootViewController:viewController];
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
-//    attributes[NSForegroundColorAttributeName] = [UIColor hexStringToColor:@"#ffffff"];
     
     navC.navigationBar.titleTextAttributes = attributes;
     navC.tabBarItem.title = title;
     navC.tabBarItem.image = image;
-    //    navC.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -3);
+//        navC.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -3);
     
     navC.tabBarItem.selectedImage = selectedImage;
     
@@ -107,7 +111,7 @@
      addAnimation:animation forKey:nil];
 }
 
--(UINavigationController *)LX_NavController{
+-(UINavigationController *)selected_NavController{
     return self.selectedViewController;
 }
 

@@ -9,6 +9,7 @@
 #import "BaseTableViewController.h"
 #import "BaseViewController.h"
 
+
 @interface BaseTableViewController ()
 
 @end
@@ -28,10 +29,10 @@
     #pragma clang diagnostic ignored"-Wdeprecated-declarations"
     AdjustsScrollViewInsetNever(self, self.tableView);
     
-    //    顶部紧挨着标题框
-    CGFloat top = NAVIGATION_BAR_HEIGHT;
+    // 顶部紧挨着标题框
+    CGFloat top = NAVIGATION_STATUS_BAR_HEIGHT;
     //底部紧挨着工具条
-    CGFloat bottom = self.tabBarController.tabBar.frame.size.height;
+    CGFloat bottom = TABBAR_HEIGHT;
     self.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
     self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(top, 0, bottom, 0);    
     self.view.backgroundColor = [UIColor greenColor];

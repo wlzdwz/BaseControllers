@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseTabBarController : UITabBarController
--(UINavigationController *)LX_NavController;
+-(UINavigationController *)selected_NavController;
+
 @end
 
 NS_ASSUME_NONNULL_END
