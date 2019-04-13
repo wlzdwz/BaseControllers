@@ -18,6 +18,8 @@
 		E936B5C1223D0E4000FD4972 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E936B5C0223D0E4000FD4972 /* BaseViewController.m */; };
 		E936B5C4223D0E5E00FD4972 /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = E936B5C3223D0E5E00FD4972 /* BaseNavController.m */; };
 		E936B5C7223D249200FD4972 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E936B5C6223D249200FD4972 /* BaseTableViewController.m */; };
+		E9E172C02261F25400113504 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E172BF2261F25400113504 /* Foundation+Log.m */; };
+		E9E172C32261F25C00113504 /* UIView+WLZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E172C12261F25C00113504 /* UIView+WLZExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		E936B5C5223D249200FD4972 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		E936B5C6223D249200FD4972 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		E98EDE4F223F825A0017A595 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E9E172BF2261F25400113504 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		E9E172C12261F25C00113504 /* UIView+WLZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WLZExtension.m"; sourceTree = "<group>"; };
+		E9E172C22261F25C00113504 /* UIView+WLZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WLZExtension.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,9 @@
 		E91FB5EA2244DD390097F47E /* category */ = {
 			isa = PBXGroup;
 			children = (
+				E9E172BF2261F25400113504 /* Foundation+Log.m */,
+				E9E172C22261F25C00113504 /* UIView+WLZExtension.h */,
+				E9E172C12261F25C00113504 /* UIView+WLZExtension.m */,
 				E91FB5EB2244DD590097F47E /* UINavigationController+FDFullscreenPopGesture.h */,
 				E91FB5EC2244DD590097F47E /* UINavigationController+FDFullscreenPopGesture.m */,
 			);
@@ -294,7 +302,9 @@
 				E936B597223D09C400FD4972 /* main.m in Sources */,
 				E936B5C7223D249200FD4972 /* BaseTableViewController.m in Sources */,
 				E91FB5ED2244DD590097F47E /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				E9E172C32261F25C00113504 /* UIView+WLZExtension.m in Sources */,
 				E936B589223D09C000FD4972 /* AppDelegate.m in Sources */,
+				E9E172C02261F25400113504 /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

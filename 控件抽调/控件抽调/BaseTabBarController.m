@@ -73,13 +73,11 @@
 - (BaseNavController *)addOneChildViewController:(UIViewController *)viewController image:(UIImage *)image selectedImage:(UIImage *)selectedImage title:(NSString *)title {
     BaseNavController *navC = [[BaseNavController alloc] initWithRootViewController:viewController];
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
-    
     navC.navigationBar.titleTextAttributes = attributes;
     navC.tabBarItem.title = title;
-    navC.tabBarItem.image = image;
-//        navC.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -3);
-    
-    navC.tabBarItem.selectedImage = selectedImage;
+    navC.tabBarItem.image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //这样形成的图形不会受到系统的影响
+    navC.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     return navC;
 }
